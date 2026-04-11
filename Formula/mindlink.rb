@@ -1,8 +1,8 @@
 class MindLink < Formula
   desc "Give your AI a brain — session memory, cross-session sync, cross-agent context"
   homepage "https://github.com/404-not-found/mindlink"
-  url "https://registry.npmjs.org/mindlink/-/mindlink-1.1.0.tgz"
-  sha256 "2e00bc7e3e54f8a26e6c24a58e5e183dcc5447eb5c7c520e5a2bc0328fc1d3e4"
+  url "https://registry.npmjs.org/mindlink/-/mindlink-1.1.1.tgz"
+  sha256 "e4517068e67707ba33603e6698fb8d495938efb52cbd72c8a4137e87d9dea3b2"
   license "MIT"
 
   depends_on "node"
@@ -13,6 +13,6 @@ class MindLink < Formula
   end
 
   test do
-    assert_match "1.1.0", shell_output("#{bin}/mindlink --version")
+    assert_match "1.1.1", shell_output("#{bin}/mindlink --version")
   end
 end
